@@ -89,7 +89,7 @@ class PrivateIngredientsApiTests(TestCase):
             name='Onion'
         )
         ingredient2 = Ingredient.objects.create(
-            user=-self.user,
+            user=self.user,
             name='Garlic'
         )
         recipe = Recipe.objects.create(
